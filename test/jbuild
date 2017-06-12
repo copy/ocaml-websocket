@@ -9,3 +9,9 @@
   (package websocket-lwt)
   (modules upgrade_connection)
   (libraries (websocket-lwt.cohttp))))
+
+(executable
+ ((name bench_server)
+  (package websocket-lwt)
+  (modules bench_server)
+  (libraries (websocket-lwt))))
